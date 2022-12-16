@@ -5,8 +5,8 @@ import MovieDisplay from '../MovieDisplay';
 
 const MovieContainer = ({ text }) => {
 	const { loading, categoryOne, categoryTwo, error } = useFetchHook(
-		`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_IMDB_KEY}&s=action`,
-		`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_IMDB_KEY}&s=comedy`
+		`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_IMDB_KEY}&s=action`,
+		`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_IMDB_KEY}&s=comedy`
 	);
 
 	const newCategoryOne = categoryOne?.filter((movie) =>
