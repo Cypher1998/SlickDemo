@@ -30,7 +30,7 @@ const MovieContainer = ({ text }) => {
 					</span>
 				</p>
 			) : (
-				<div className="space-y-1">
+				<div className="space-y-4">
 					<div className="space-y-2">
 						<p className="font-medium text-[15px]">
 							{loading ? (
