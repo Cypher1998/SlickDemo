@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.background {
+	background-image: url('../assets/bgmobile.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.background {
+		background-image: url('../assets/bgtablet.jpg');
+	}
+}
+
+@media (min-width: 1024px) {
+	.background {
+		background-image: url('../assets/bgdesktop.jpg');
+	}
+}
+
+.movieBg::-webkit-scrollbar {
+	/* display: none; */
+	visibility: hidden;
+}
