@@ -10,11 +10,11 @@ const MovieContainer = ({ text }) => {
 	);
 
 	const newCategoryOne = categoryOne?.filter((movie) =>
-		movie.Title.includes(text)
+		movie.Title.toLowerCase().includes(text.toLowerCase())
 	);
 
 	const newCategoryTwo = categoryTwo?.filter((movie) =>
-		movie.Title.includes(text)
+		movie.Title.toLowerCase().includes(text.toLowerCase())
 	);
 
 	return (
